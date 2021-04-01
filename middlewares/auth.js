@@ -3,7 +3,6 @@ const { Unauthorized } = require('../errors/allErrors');
 
 const { JWT_SECRET } = require('../utils/config');
 
-// eslint-disable-next-line consistent-return
 module.exports = (req, res, next) => {
   const { authorization } = req.headers;
 
