@@ -28,7 +28,7 @@ const movieValidation = celebrate({
       }
       return link;
     }),
-    movieId: Joi.string().required(),
+    movieId: Joi.number().required(),
     nameRU: Joi.string().required(),
     nameEN: Joi.string().required(),
     thumbnail: Joi.string().required().custom((link) => {
